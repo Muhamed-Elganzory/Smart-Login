@@ -99,7 +99,7 @@ function login() {
                 for (var i = 0; i < usersList.length; i++) {
                     if (DOMElements.email.value == usersList[i].email && DOMElements.password.value == usersList[i].password) {
                         localStorage.setItem('userActive', JSON.stringify(usersList[i].userName));
-                        window.location.replace('../Pages/home.html');
+                        window.location.replace('./Pages/home.html');
                         //window.location.href = '../home.html';
                         //window.open('../Pages/home.html', '_self');
                         return;
