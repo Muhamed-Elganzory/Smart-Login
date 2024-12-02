@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/key.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Style/all.min.css">
+    <link rel="stylesheet" href="./Style/bootstrap.min.css">
+    <link rel="stylesheet" href="./Style/smart_login.css">
+    <title>LogIn</title>
+</head>
+
+<body>
+    <main>
+        <div class="m-auto pt-5">
+            <div class="container p-5">
+                <div class="login-container m-auto w-75 shadow p-5 text-center">
+                    <h1 class="pb-4">Smart Login System</h1>
+                    <form>
+                        <input class="form-control m-auto mb-4" type="email" name="" id="email"
+                            placeholder="Enter your email" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Please Enter Your Email">
+                        <input class="form-control m-auto mb-4" type="password" name="" id="password"
+                            placeholder="Enter your password" data-bs-toggle="tooltip" data-bs-placement="left"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="Please Enter Your Password">
+                        <p class="lead m-0 text-danger d-none" id="errorMessage"></p>
+                        <button class="btn btn-outline-info mt-4 mb-4 w-100" onclick="login()">Login</button>
+                    </form>
+                    <p class="lead">
+                        Don’t have an account?
+                        <a href="./Pages/sign-up.html" class="link-light" target="_blank">Sign Up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./Script/bootstrap.bundle.min.js"></script>
+    <script src="./Script/login.js"></script>
+</body>
+
+</html>
